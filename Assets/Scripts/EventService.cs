@@ -71,7 +71,7 @@ public class EventService : MonoBehaviour
         }
         catch (WebException ex)
         {
-            Debug.LogError("Error sending events to server: " + ex.Message);
+            Debug.LogError($"Error sending events to server: {ex.Message}");
         }
 
         return false;
